@@ -85,7 +85,7 @@ footer {
 img {
     display: block;
     margin: 20px auto;
-    width: 100px; /* Image size already reduced */
+    width: 250px; /* Image size already reduced */
     max-width: 100%;
 }
 
