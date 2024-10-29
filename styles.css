@@ -6,17 +6,12 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Or choose another font, e.g., Poppins */
-    background-color: #f5f5f5; /* Light background color */
-    color: #333; /* Main text color */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem; /* Base font size doubled for general text */
+    background-color: #f5f5f5;
+    color: #333;
     line-height: 1.6;
     overflow-x: hidden;
-}
-
-/* Center "Meet the Teachers" title */
-main h3 {
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 main {
@@ -28,10 +23,18 @@ main {
 
 /* Header and Navigation Styling */
 header {
-    background-color: #0044cc; /* Vibrant blue background */
+    background-color: #0044cc;
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+header h1 {
+    font-size: 3.2rem; /* Double size for main title */
+}
+
+header h2 {
+    font-size: 2.4rem; /* Double size for subtitle */
 }
 
 nav ul {
@@ -44,19 +47,45 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
+    font-size: 1.8rem; /* Larger navigation links */
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffd700; /* Gold color on hover */
+    color: #ffd700;
+}
+
+/* Main Section Titles */
+main h3 {
+    text-align: center;
+    font-size: 2.4rem; /* Double size for section title */
+    margin-bottom: 20px;
+}
+
+main h4 {
+    font-size: 2rem; /* Double size for subsection titles */
+    margin-top: 20px;
+}
+
+p, ul li {
+    font-size: 1.6rem; /* Double size for regular paragraph text */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0044cc;
+    color: white;
+    font-size: 1.4rem; /* Larger footer text */
 }
 
 /* Center images and reduce size */
 img {
     display: block;
     margin: 20px auto;
-    width: 100px; /* 25% of the previous size */
+    width: 100px; /* Image size already reduced */
     max-width: 100%;
 }
 
@@ -66,39 +95,21 @@ img {
         flex-direction: column;
     }
     header h1 {
-        font-size: 24px;
+        font-size: 2.4rem;
     }
-    main {
-        padding: 10px;
+    header h2 {
+        font-size: 2rem;
+    }
+    main h3 {
+        font-size: 2rem;
+    }
+    main h4 {
+        font-size: 1.8rem;
+    }
+    footer {
+        font-size: 1.2rem;
     }
 }
-
-/* Colors and Fonts */
-button, .cta-button {
-    background-color: #ff6347; /* Coral color */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover, .cta-button:hover {
-    background-color: #ff4500; /* Darker coral on hover */
-}
-
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #0044cc; /* Match header background for consistency */
-    color: white;
-    font-size: 0.9rem;
-}
-
 
 /* Full-Screen Sections */
 section {
