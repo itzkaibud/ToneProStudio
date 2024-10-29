@@ -89,6 +89,17 @@ button:hover, .cta-button:hover {
     background-color: #ff4500; /* Darker coral on hover */
 }
 
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0044cc; /* Match header background for consistency */
+    color: white;
+    font-size: 0.9rem;
+}
+
+
 /* Full-Screen Sections */
 section {
     min-height: 80vh;
