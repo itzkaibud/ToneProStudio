@@ -1,4 +1,4 @@
-/* Reset styles for consistent layout */
+/* Base Reset and Styling */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem; /* Base font size doubled for general text */
+    font-size: 1.6rem;
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
@@ -30,11 +30,11 @@ header {
 }
 
 header h1 {
-    font-size: 3.2rem; /* Double size for main title */
+    font-size: 3.2rem;
 }
 
 header h2 {
-    font-size: 2.4rem; /* Double size for subtitle */
+    font-size: 2.4rem;
 }
 
 nav ul {
@@ -47,7 +47,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    font-size: 1.8rem; /* Larger navigation links */
+    font-size: 1.8rem;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -59,17 +59,17 @@ nav ul li a:hover {
 /* Main Section Titles */
 main h3 {
     text-align: center;
-    font-size: 2.4rem; /* Double size for section title */
+    font-size: 2.4rem;
     margin-bottom: 20px;
 }
 
 main h4 {
-    font-size: 2rem; /* Double size for subsection titles */
+    font-size: 2rem;
     margin-top: 20px;
 }
 
 p, ul li {
-    font-size: 1.6rem; /* Double size for regular paragraph text */
+    font-size: 1.6rem;
 }
 
 /* Footer Styling */
@@ -78,37 +78,15 @@ footer {
     padding: 20px;
     background-color: #0044cc;
     color: white;
-    font-size: 1.4rem; /* Larger footer text */
+    font-size: 1.4rem;
 }
 
 /* Center images and reduce size */
 img {
     display: block;
     margin: 20px auto;
-    width: 500px; /* Image size already reduced */
+    width: 500px;
     max-width: 100%;
-}
-
-/* Responsive Layout */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-    header h1 {
-        font-size: 2.4rem;
-    }
-    header h2 {
-        font-size: 2rem;
-    }
-    main h3 {
-        font-size: 2rem;
-    }
-    main h4 {
-        font-size: 1.8rem;
-    }
-    footer {
-        font-size: 1.2rem;
-    }
 }
 
 /* Full-Screen Sections */
@@ -119,4 +97,123 @@ section {
     background-color: #f5f5f5;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+
+/* Small screens (phones, less than 600px) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.4rem;
+    }
+    header h2 {
+        font-size: 1.8rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li a {
+        font-size: 1.6rem;
+        padding: 8px 16px;
+    }
+    main h3 {
+        font-size: 2rem;
+    }
+    main h4 {
+        font-size: 1.6rem;
+    }
+    p, ul li {
+        font-size: 1.4rem;
+    }
+    footer {
+        font-size: 1.2rem;
+    }
+    img {
+        width: 300px;
+    }
+}
+
+/* Medium screens (tablets, 600px - 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2.8rem;
+    }
+    header h2 {
+        font-size: 2.2rem;
+    }
+    nav ul li a {
+        font-size: 1.7rem;
+        padding: 10px 20px;
+    }
+    main h3 {
+        font-size: 2.2rem;
+    }
+    main h4 {
+        font-size: 1.8rem;
+    }
+    p, ul li {
+        font-size: 1.5rem;
+    }
+    footer {
+        font-size: 1.3rem;
+    }
+    img {
+        width: 400px;
+    }
+}
+
+/* Large screens (laptops/desktops, 1024px - 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    header h2 {
+        font-size: 2.4rem;
+    }
+    nav ul li a {
+        font-size: 1.8rem;
+    }
+    main h3 {
+        font-size: 2.4rem;
+    }
+    main h4 {
+        font-size: 2rem;
+    }
+    p, ul li {
+        font-size: 1.6rem;
+    }
+    footer {
+        font-size: 1.4rem;
+    }
+    img {
+        width: 500px;
+    }
+}
+
+/* Extra-large screens (large desktops, 1440px and above) */
+@media (min-width: 1440px) {
+    header h1 {
+        font-size: 3.2rem;
+    }
+    header h2 {
+        font-size: 2.6rem;
+    }
+    nav ul li a {
+        font-size: 2rem;
+    }
+    main h3 {
+        font-size: 2.6rem;
+    }
+    main h4 {
+        font-size: 2.2rem;
+    }
+    p, ul li {
+        font-size: 1.8rem;
+    }
+    footer {
+        font-size: 1.5rem;
+    }
+    img {
+        width: 600px;
+    }
 }
