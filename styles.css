@@ -11,6 +11,7 @@ body {
     color: #333; /* Main text color */
     line-height: 1.6;
     overflow-x: hidden;
+    text-align: center; /* Center all main content */
 }
 
 main {
@@ -44,6 +45,14 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ffd700; /* Gold color on hover */
+}
+
+/* Center images and adjust their sizes */
+img {
+    display: block;
+    margin: 20px auto;
+    width: 400px; /* Increased image size */
+    max-width: 100%;
 }
 
 /* Responsive Layout */
