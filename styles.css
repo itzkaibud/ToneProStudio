@@ -99,6 +99,12 @@ section {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Calendar Styling (adjusted for mobile) */
+.calendar {
+    width: 100%; /* Full width by default */
+    max-width: 800px;
+    margin: 20px auto;
+}
 
 /* Media Queries */
 
@@ -131,6 +137,10 @@ section {
     }
     img {
         width: 300px;
+    }
+    .calendar {
+        width: 50%; /* Resize to 50% on smaller screens */
+        margin: 0 auto;
     }
 }
 
