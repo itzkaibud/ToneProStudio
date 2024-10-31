@@ -141,9 +141,12 @@ section {
     img {
         width: 300px;
     }
-    .calendar {
-        width: 10%;
-        margin: 0 auto;
+
+    /* Resize the calendar iframe specifically on small screens */
+    .responsive-calendar {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
     }
 }
 
