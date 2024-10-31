@@ -72,6 +72,17 @@ p, ul li {
     font-size: 1.6rem;
 }
 
+
+/* Indent the bullet points in the pricing section */
+ul {
+    padding-left: 20px; /* Adjust this value as needed */
+}
+
+.pricing-list ul {
+    padding-left: 30px;
+}
+
+
 /* Footer Styling */
 footer {
     text-align: center;
