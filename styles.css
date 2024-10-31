@@ -99,9 +99,9 @@ section {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Calendar Styling (adjusted for mobile) */
+/* Calendar Styling */
 .calendar {
-    width: 100%; /* Full width by default */
+    width: 100%;
     max-width: 800px;
     margin: 20px auto;
 }
@@ -110,6 +110,9 @@ section {
 
 /* Small screens (phones, less than 600px) */
 @media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
     header h1 {
         font-size: 2.4rem;
     }
@@ -120,8 +123,8 @@ section {
         flex-direction: column;
     }
     nav ul li a {
-        font-size: 1.6rem;
-        padding: 8px 16px;
+        font-size: 1.4rem; /* Smaller font for mobile */
+        padding: 6px 12px;  /* Reduce padding for compact layout */
     }
     main h3 {
         font-size: 2rem;
@@ -139,7 +142,7 @@ section {
         width: 300px;
     }
     .calendar {
-        width: 50%; /* Resize to 50% on smaller screens */
+        width: 50%;
         margin: 0 auto;
     }
 }
@@ -173,8 +176,8 @@ section {
     }
 }
 
-/* Large screens (laptops/desktops, 1024px - 1440px) */
-@media (min-width: 1024px) and (max-width: 1440px) {
+/* Large screens (1024px and above) */
+@media (min-width: 1024px) {
     header h1 {
         font-size: 3rem;
     }
@@ -198,33 +201,5 @@ section {
     }
     img {
         width: 500px;
-    }
-}
-
-/* Extra-large screens (large desktops, 1440px and above) */
-@media (min-width: 1440px) {
-    header h1 {
-        font-size: 3.2rem;
-    }
-    header h2 {
-        font-size: 2.6rem;
-    }
-    nav ul li a {
-        font-size: 2rem;
-    }
-    main h3 {
-        font-size: 2.6rem;
-    }
-    main h4 {
-        font-size: 2.2rem;
-    }
-    p, ul li {
-        font-size: 1.8rem;
-    }
-    footer {
-        font-size: 1.5rem;
-    }
-    img {
-        width: 600px;
     }
 }
