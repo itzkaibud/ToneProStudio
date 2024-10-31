@@ -105,6 +105,31 @@ section {
     max-width: 1200px;
 }
 
+/* Form Styling */
+form label,
+form input,
+form textarea,
+form button {
+    font-size: 1.6rem; /* Default font size */
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+form button {
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #0044cc;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003399;
+}
+
 /* Media Queries */
 
 /* Small screens (phones, less than 600px) */
@@ -139,6 +164,14 @@ section {
     }
     img {
         width: 300px;
+    }
+
+    /* Contact Form Scaling */
+    form label,
+    form input,
+    form textarea,
+    form button {
+        font-size: 0.8rem; /* 50% of the original font size for mobile */
     }
 }
 
