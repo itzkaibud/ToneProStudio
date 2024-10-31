@@ -100,10 +100,9 @@ section {
 }
 
 /* Calendar Styling */
-.calendar {
+#responsive-calendar {
     width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 1200px;
 }
 
 /* Media Queries */
@@ -140,13 +139,6 @@ section {
     }
     img {
         width: 300px;
-    }
-
-    /* Resize the calendar iframe specifically on small screens */
-    .responsive-calendar {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
     }
 }
 
