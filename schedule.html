@@ -24,14 +24,31 @@
         <h3>Schedule</h3>
         <p>Below you can view our available lesson times. Please check back regularly for updates.</p>
         <center>
-    <iframe class="responsive-calendar" src="https://calendar.google.com/calendar/embed?src=toneprostudio%40gmail.com&ctz=America%2FLos_Angeles" 
-        style="border: 0" width="1200" height="900" frameborder="0" scrolling="no">
-    </iframe>
-</center> 
+            <iframe id="responsive-calendar" class="responsive-calendar" 
+                src="https://calendar.google.com/calendar/embed?src=toneprostudio%40gmail.com&ctz=America%2FLos_Angeles" 
+                style="border: 0" width="1200" height="900" frameborder="0" scrolling="no">
+            </iframe>
+        </center> 
         <p>To book a lesson, please contact us via the <a href="contact.html">Contact Us</a> page.</p>
     </main>
     <footer>
         <p>Contact us: ToneProStudio@gmail.com | (760) 419-4962</p>
     </footer>
+
+    <!-- JavaScript for resizing iframe on mobile -->
+    <script>
+        function resizeCalendar() {
+            var calendar = document.getElementById("responsive-calendar");
+            if (window.innerWidth < 600) {
+                calendar.style.width = "100%";
+                calendar.style.height = (window.innerWidth * 0.75) + "px"; // 75% height proportional to width
+            } else {
+                calendar.style.width = "1200px";
+                calendar.style.height = "900px";
+            }
+        }
+        window.addEventListener("resize", resizeCalendar);
+        window.addEventListener("load", resizeCalendar);
+    </script>
 </body>
 </html>
